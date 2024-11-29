@@ -1,0 +1,189 @@
+<html>
+<head>
+    <link rel="stylesheet" href="UltralTicTocToe.css">
+</head>
+
+<body>
+    <h1 id="result">Red wins: 0 Blue wins: 0</h1>
+    <button id="refresh" onclick="Refresh()">Refresh</button>
+    <!-- first layer -->
+    <!-- first table -->
+    <table id="board1" border="1" cellspacing="0px" style="margin-top: 50px;height: 300px;width: 300px;z-index: 10;">
+        <tr>
+            <td id="td11" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,11)"></td>
+            <td id="td12" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,12)"></td>
+            <td id="td13" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,13)"></td>
+        </tr>
+        <tr>
+            <td id="td14" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,14)"></td>
+            <td id="td15" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,15)"></td>
+            <td id="td16" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,16)"></td>
+        </tr>
+        <tr>
+            <td id="td17" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,17)"></td>
+            <td id="td18" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,18)"></td>
+            <td id="td19" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,19)"></td>
+        </tr>
+    </table>
+    <div id="cover1" style="margin-top: -300px;height: 300px;width: 300px;z-index: 1;"></div>
+    <!-- second table -->
+    <table id="board2" border="1" cellspacing="0px" style="margin-top: -301.75px;margin-left: 300px;height: 300px;width: 300px;z-index: 10;">
+        <tr>
+            <td id="td21" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,21)"></td>
+            <td id="td22" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,22)"></td>
+            <td id="td23" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,23)"></td>
+        </tr>
+        <tr>
+            <td id="td24" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,24)"></td>
+            <td id="td25" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,25)"></td>
+            <td id="td26" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,26)"></td>
+        </tr>
+        <tr>
+            <td id="td27" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,27)"></td>
+            <td id="td28" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,28)"></td>
+            <td id="td29" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,29)"></td>
+        </tr>
+    </table>
+    <div id="cover2" style="margin-top: -300px;margin-left: 300px;height: 300px;width: 300px;z-index: 1;"></div>
+    <!-- third table -->
+    <table id="board3" border="1" cellspacing="0px" style="margin-top: -301.5px;margin-left: 600px;height: 300px;width: 300px;z-index: 10;">
+        <tr>
+            <td id="td31" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,31)"></td>
+            <td id="td32" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,32)"></td>
+            <td id="td33" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,33)"></td>
+        </tr>
+        <tr>
+            <td id="td34" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,34)"></td>
+            <td id="td35" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,35)"></td>
+            <td id="td36" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,36)"></td>
+        </tr>
+        <tr>
+            <td id="td37" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,37)"></td>
+            <td id="td38" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,38)"></td>
+            <td id="td39" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,39)"></td>
+        </tr>
+    </table>
+    <div id="cover3" style="margin-top: -300px;margin-left: 600px;height: 300px;width: 300px;z-index: 1;"></div>
+    <!-- second layer -->
+    <!-- forth table -->
+    <table id="board4" border="1" cellspacing="0px" style="margin-top: 0px;height: 300px;width: 300px;z-index: 10;">
+        <tr>
+            <td id="td41" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,41)"></td>
+            <td id="td42" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,42)"></td>
+            <td id="td43" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,43)"></td>
+        </tr>
+        <tr>
+            <td id="td44" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,44)"></td>
+            <td id="td45" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,45)"></td>
+            <td id="td46" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,46)"></td>
+        </tr>
+        <tr>
+            <td id="td47" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,47)"></td>
+            <td id="td48" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,48)"></td>
+            <td id="td49" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,49)"></td>
+        </tr>
+    </table>
+    <div id="cover4" style="margin-top: -300px;height: 300px;width: 300px;z-index: 1;"></div>
+    <!-- fifth table -->
+    <table id="board5" border="1" cellspacing="0px" style="margin-top: -301.5px;margin-left: 300px;height: 300px;width: 300px;z-index: 10;">
+        <tr>
+            <td id="td51" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,51)"></td>
+            <td id="td52" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,52)"></td>
+            <td id="td53" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,53)"></td>
+        </tr>
+        <tr>
+            <td id="td54" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,54)"></td>
+            <td id="td55" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,55)"></td>
+            <td id="td56" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,56)"></td>
+        </tr>
+        <tr>
+            <td id="td57" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,57)"></td>
+            <td id="td58" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,58)"></td>
+            <td id="td59" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,59)"></td>
+        </tr>
+    </table>
+    <div id="cover5" style="margin-top: -300px;margin-left: 300px;height: 300px;width: 300px;z-index: 1;"></div>
+    <!-- sixth table -->
+    <table id="board6" border="1" cellspacing="0px" style="margin-top: -301.5px;margin-left: 600px;height: 300px;width: 300px;z-index: 10;">
+        <tr>
+            <td id="td61" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,61)"></td>
+            <td id="td62" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,62)"></td>
+            <td id="td63" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,63)"></td>
+        </tr>
+        <tr>
+            <td id="td64" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,64)"></td>
+            <td id="td65" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,65)"></td>
+            <td id="td66" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,66)"></td>
+        </tr>
+        <tr>
+            <td id="td67" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,67)"></td>
+            <td id="td68" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,68)"></td>
+            <td id="td69" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,69)"></td>
+        </tr>
+    </table>
+    <div id="cover6" style="margin-top: -300px;margin-left: 600px;height: 300px;width: 300px;z-index: 1;"></div>
+    <!-- third layer -->
+    <!-- seventh table -->
+    <table id="board7" border="1" cellspacing="0px" style="margin-top: 0px;height: 300px;width: 300px;z-index: 10;">
+        <tr>
+            <td id="td71" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,71)"></td>
+            <td id="td72" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,72)"></td>
+            <td id="td73" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,73)"></td>
+        </tr>
+        <tr>
+            <td id="td74" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,74)"></td>
+            <td id="td75" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,75)"></td>
+            <td id="td76" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,76)"></td>
+        </tr>
+        <tr>
+            <td id="td77" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,77)"></td>
+            <td id="td78" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,78)"></td>
+            <td id="td79" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,79)"></td>
+        </tr>
+    </table>
+    <div id="cover7" style="margin-top: -300px;height: 300px;width: 300px;z-index: 1;"></div>
+    <!-- eighth table -->
+    <table id="board8" border="1" cellspacing="0px" style="margin-top: -301.5px;height: 300px;margin-left: 300px;width: 300px;z-index: 10;">
+        <tr>
+            <td id="td81" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,81)"></td>
+            <td id="td82" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,82)"></td>
+            <td id="td83" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,83)"></td>
+        </tr>
+        <tr>
+            <td id="td84" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,84)"></td>
+            <td id="td85" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,85)"></td>
+            <td id="td86" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,86)"></td>
+        </tr>
+        <tr>
+            <td id="td87" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,87)"></td>
+            <td id="td88" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,88)"></td>
+            <td id="td89" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,89)"></td>
+        </tr>
+    </table>
+    <div id="cover8" style="margin-top: -300px;margin-left: 300px;height: 300px;width: 300px;z-index: 1;"></div>
+    <!-- nineth table -->
+    <table id="board9" border="1" cellspacing="0px" style="margin-top: -301.5px;margin-left: 600px;height: 300px;width: 300px;z-index: 10;">
+        <tr>
+            <td id="td91" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,91)"></td>
+            <td id="td92" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,92)"></td>
+            <td id="td93" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,93)"></td>
+        </tr>
+        <tr>
+            <td id="td94" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,94)"></td>
+            <td id="td95" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,95)"></td>
+            <td id="td96" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,96)"></td>
+        </tr>
+        <tr>
+            <td id="td97" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,97)"></td>
+            <td id="td98" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,98)"></td>
+            <td id="td99" style="background-color: white;height: 100px;width: 100px;" onclick="play(this,99)"></td>
+        </tr>
+    </table>
+    <div id="cover9" style="margin-top: -300px;margin-left: 600px;height: 300px;width: 300px;z-index: 1;"></div>
+    <!-- other -->
+    <h1 id="winner"></h1>
+    <h1 id="numberle"></h1>
+    <script src="UltralTicTocToe.js">
+    </script>   
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+#board {
+    height: 300px;
+    width: 300px;
+    display: grid;
+    place-content: center;
+}
+.circle{
+    height: 45%;
+    width: 45%;
+    border-radius: 100%;
+    border:solid 16px red;
+    color : red;    
+    margin-left: px;    
+}
+.X{
+    height: 100%;
+    width: 100%;
+    color : blue;
+    font-size: 60px;
+}
